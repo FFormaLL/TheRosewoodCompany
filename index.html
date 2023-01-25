@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Rosewood Company</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            background-color: rgb(166, 133, 127);
+        }
+        h2 {
+            text-align: center;
+            line-height: 200%;
+        }
+        /* CSS for centering the logo on desktop */
+        .logo {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+        /* Media query for screens larger than 1000px */
+        @media (min-width: 1000px) {
+            img {
+                width: 50%;
+            }
+            h2 {
+                font-size: 32px;
+            }
+        }
+        /* CSS for centering the logo on mobile */
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            img {
+                width: 75%;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="images/theRosewoodCo_letterhead.png" alt="Logo">
+    </div>
+    <h2>
+        Contact us!<br>
+        <a href="mailto:TheRosewoodCo@outlook.com">Email</a><br>
+        <a href="https://www.instagram.com/the_rosewood_company/">Instagram</a>
+    </h2>
+    
+</body>
+</html>
