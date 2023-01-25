@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>The Rosewood Company</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
+        @font-face {
+            font-family: "My Custom Font";
+            
+            src: url(font/LibreBaskerville-Regular.ttf) format("truetype");
+        }
+
+        h2.text {
+            font-family: "My Custom Font", Verdana, Tahoma;
+        }
+        a.email {
+            letter-spacing: 2px;
+        }
         body {
             background-color: rgb(166, 133, 127);
+        }
+        a {
+            color: rgb(153, 208, 172);
+            text-decoration: none;
+        }
+        a > img {
+            width: 32px;
+            background: white;
+            border-radius: 8px;
+            margin-top: 32px;
         }
         h2 {
             text-align: center;
             line-height: 200%;
+            letter-spacing: 3px;
+            font-weight: 300;
         }
+
         /* CSS for centering the logo on desktop */
         .logo {
             display: flex;
             justify-content: center;
             height: 100%;
         }
+
         /* Media query for screens larger than 1000px */
         @media (min-width: 1000px) {
             img {
                 width: 50%;
             }
+
             h2 {
                 font-size: 32px;
             }
         }
+
         /* CSS for centering the logo on mobile */
         /* Media query for screens smaller than 600px */
         @media (max-width: 600px) {
             img {
-                width: 75%;
+                width: 100%;
             }
+
             h2 {
                 font-size: 16px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="logo">
-        <img src="images/theRosewoodCo_letterhead.png" alt="Logo">
+        <img src="/images/theRosewoodCo_letterhead.png" alt="Logo">
     </div>
-    <h2>
+    <h2 class="text">
         Contact us!<br>
-        <a href="mailto:TheRosewoodCo@outlook.com">Email</a><br>
-        <a href="https://www.instagram.com/the_rosewood_company/">Instagram</a>
+        <a class="email" href="mailto:TheRosewoodCo@outlook.com">TheRosewoodCo@outlook.com</a><br>
+        <a href="https://www.instagram.com/the_rosewood_company/"><img src="/images/Instagram-Icon.png"></a>
     </h2>
-    
+
 </body>
+
 </html>
