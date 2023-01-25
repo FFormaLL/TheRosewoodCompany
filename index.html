@@ -5,78 +5,73 @@
     <title>The Rosewood Company</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
-        @font-face {
-            font-family: "My Custom Font";
-            
-            src: url(font/LibreBaskerville-Regular.ttf) format("truetype");
+        body {
+            background-color: teal;
         }
 
-        h2.text {
-            font-family: "My Custom Font", Verdana, Tahoma;
+        @font-face {
+            font-family: "My Custom Font";
+            src: url('/font/LibreBaskerville-Regular.ttf') format("truetype");
         }
-        a.email {
-            letter-spacing: 2px;
+
+        .customfont {
+            font-family: "My Custom Font";
         }
-        body {
-            background-color: white;
-        }
+
         a {
             color: rgb(153, 208, 172);
             text-decoration: none;
         }
-        a > img {
-            width: 32px;
-            background: white;
-            border-radius: 8px;
-            margin-top: 32px;
+
+        a.email {
+            letter-spacing: 2px;
         }
+
+        .socialicon {
+            width: 70px;
+            background: white;
+            border-radius: 22px;
+            position: fixed;
+            bottom: 32px;
+        }
+
+        img.logo {
+            display: block;
+            margin: auto;
+        }
+
         h2 {
             text-align: center;
             line-height: 200%;
             letter-spacing: 3px;
             font-weight: 300;
+            font-size: 2em;
+            margin-top: 64px;
         }
-
-        /* CSS for centering the logo on desktop */
-        .logo {
-            display: flex;
-            justify-content: center;
-            height: 100%;
-        }
-
-        /* Media query for screens larger than 1000px */
-        @media (min-width: 1000px) {
-            img {
-                width: 50%;
+        
+        @media (min-width: 400px) {
+            img.logo {
+                width: 100%;
+                height: auto;
             }
-
             h2 {
-                font-size: 32px;
+                font-size: 3em;
             }
-        }
-
-        /* CSS for centering the logo on mobile */
-        /* Media query for screens smaller than 600px */
-        @media (max-width: 600px) {
-            img {
-                width: 120%;
-            }
-
-            h2 {
-                font-size: 25px;
+            .socialicon {
+                bottom: 1200px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        <img src="/images/theRosewoodCo_letterhead.png" alt="Logo">
-    </div>
-    <h2 class="text">
+    <img class="logo" src="/images/theRosewoodCo_letterhead.png" alt="Logo">
+    <h2 class="customfont">
         Contact us!<br>
         <a class="email" href="mailto:TheRosewoodCo@outlook.com">TheRosewoodCo@outlook.com</a><br>
-        <a href="https://www.instagram.com/the_rosewood_company/"><img src="/images/Instagram-Icon.png"></a>
+        <a href="https://www.instagram.com/the_rosewood_company/">
+            <img class="socialicon" src="/images/Instagram-Icon.png">
+        </a>
     </h2>
 
 </body>
