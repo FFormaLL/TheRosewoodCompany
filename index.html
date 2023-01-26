@@ -3,10 +3,12 @@
 
 <head>
     <title>The Rosewood Company</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <style>
+    <style type="text/css">
         body {
             background-color: teal;
+            position: relative;
         }
 
         @font-face {
@@ -28,16 +30,12 @@
         }
 
         .socialicon {
-            width: 70px;
+            width: 64px;
             background: white;
             border-radius: 22px;
             position: fixed;
-            bottom: 32px;
-        }
-
-        img.logo {
-            display: block;
-            margin: auto;
+            left: calc(50% - 35px);
+            bottom: 64px;
         }
 
         h2 {
@@ -48,17 +46,48 @@
             font-size: 2em;
             margin-top: 64px;
         }
-        
-        @media (min-width: 400px) {
+
+        img.logo {
+            display: block;
+            margin: auto;
+        }
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1px;
+            height: 100vh;
+            background-color: black;
+            transform: translateY(-50%);
+
+        }
+
+        @media all and (min-width:500px) and (max-width: 720px) {
+            img.logo {
+                width: 100%;
+            }
+            h2 {
+                font-size: 5vw;
+            }
+        }
+
+        @media all and (min-width:321px) and (max-width: 480px) {
             img.logo {
                 width: 100%;
                 height: auto;
             }
+
             h2 {
-                font-size: 3em;
+                font-size: 1em;
             }
+
             .socialicon {
-                bottom: 600px;
+                bottom: 64px;
+                left: calc(50% - 16px);
+                width: 32px;
+                border-radius: 10px;
+                position: fixed;
             }
         }
     </style>
@@ -73,7 +102,7 @@
             <img class="socialicon" src="/images/Instagram-Icon.png">
         </a>
     </h2>
-
+    <!-- <div class="line"></div> -->
 </body>
 
 </html>
